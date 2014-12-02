@@ -8,20 +8,20 @@
       <meta content='width=1100' name='viewport'/>
     </b:if>
     <b:include data='blog' name='all-head-content'/>
-    <b:if cond='data:blog.pageType == "index"'>
+    <b:if cond='data:blog.pageType == &quot;index&quot;'>
 		<title><data:blog.title/></title>
 	<b:else/>
 		<title><data:blog.pageName/> - <data:blog.title/></title>
 	</b:if>
 	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'/>
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+	<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' rel='stylesheet'/>
 	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+	<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css' rel='stylesheet'/>
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'/>
 	
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet'/>
     <b:skin><![CDATA[/*
 -----------------------------------------------
 Blogger Template Style
@@ -1001,9 +1001,9 @@ body.mobile {
 	margin:0px !important;
 }
 
-]]>
 
-</b:skin>
+
+]]></b:skin>
 
     <b:template-skin>
       <b:variable default='100%' name='content.width' type='length'/>
@@ -1076,38 +1076,38 @@ body.mobile {
   <b:section class='navbar' id='navbar' maxwidgets='1' showaddelement='no'>
     <b:widget id='Navbar1' locked='true' title='Thanh điều hướng' type='Navbar'>
       <b:includable id='main'>&lt;script type=&quot;text/javascript&quot;&gt;
-			function setAttributeOnload(object, attribute, val) {
-			  if(window.addEventListener) {
-				window.addEventListener(&#39;load&#39;,
-				  function(){ object[attribute] = val; }, false);
-			  } else {
-				window.attachEvent(&#39;onload&#39;, function(){ object[attribute] = val; });
-			  }
-			}
-		  &lt;/script&gt;
-		&lt;div id=&quot;navbar-iframe-container&quot;&gt;&lt;/div&gt;
-		&lt;script type=&quot;text/javascript&quot; src=&quot;https://apis.google.com/js/plusone.js&quot;&gt;&lt;/script&gt;
-		&lt;script type=&quot;text/javascript&quot;&gt;
-				gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
-				  if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
-					gapi.iframes.getContext().openChild({
-						url: &#39;https://draft.blogger.com/navbar.g?targetBlogID\0755092287799829820642\46blogName\75Dumbass+developer\47s+life\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75LIGHT\46layoutType\75LAYOUTS\46searchRoot\75http://dumbass-developer.blogspot.com/search\46blogLocale\75vi\46v\0752\46homepageUrl\75http://dumbass-developer.blogspot.com/\46blogFollowUrl\75https://plus.google.com/110197759016744577492\46vt\75-6529608443868674474&#39;,
-						where: document.getElementById(&quot;navbar-iframe-container&quot;),
-						id: &quot;navbar-iframe&quot;
-					});
-				  }
-				});
-			  &lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
-		(function() {
-		var script = document.createElement(&#39;script&#39;);
-		script.type = &#39;text/javascript&#39;;
-		script.src = &#39;//pagead2.googlesyndication.com/pagead/js/google_top_exp.js&#39;;
-		var head = document.getElementsByTagName(&#39;head&#39;)[0];
-		if (head) {
-		head.appendChild(script);
-		}})();
-		&lt;/script&gt;
-		</b:includable>
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener(&#39;load&#39;,
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent(&#39;onload&#39;, function(){ object[attribute] = val; });
+      }
+    }
+  &lt;/script&gt;
+&lt;div id=&quot;navbar-iframe-container&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://apis.google.com/js/plusone.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+        gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
+          if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
+            gapi.iframes.getContext().openChild({
+                url: &#39;https://draft.blogger.com/navbar.g?targetBlogID\0755092287799829820642\46blogName\75Dumbass+developer\47s+life\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75LIGHT\46layoutType\75LAYOUTS\46searchRoot\75http://dumbass-developer.blogspot.com/search\46blogLocale\75vi\46v\0752\46homepageUrl\75http://dumbass-developer.blogspot.com/\46blogFollowUrl\75https://plus.google.com/110197759016744577492\46vt\75-6529608443868674474&#39;,
+                where: document.getElementById(&quot;navbar-iframe-container&quot;),
+                id: &quot;navbar-iframe&quot;
+            });
+          }
+        });
+      &lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+(function() {
+var script = document.createElement(&#39;script&#39;);
+script.type = &#39;text/javascript&#39;;
+script.src = &#39;//pagead2.googlesyndication.com/pagead/js/google_top_exp.js&#39;;
+var head = document.getElementsByTagName(&#39;head&#39;)[0];
+if (head) {
+head.appendChild(script);
+}})();
+&lt;/script&gt;
+</b:includable>
     </b:widget>
   </b:section>
 
@@ -1176,8 +1176,8 @@ body.mobile {
 		<div class='fauxborder-right header-fauxborder-right'/>
 		<div class='region-inner header-inner'>
 		  <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
-			<b:widget id='Header1' locked='true' title='Dumbass developer&apos;s life (Tiêu đề)' type='Header'>
-			  <b:includable id='main'>
+<b:widget id='Header1' locked='true' title='Dumbass developer&apos;s life (Tiêu đề)' type='Header'>
+  <b:includable id='main'>
 
 	  <b:if cond='data:useImage'>
 		<b:if cond='data:imagePlacement == &quot;BEHIND&quot;'>
@@ -1232,20 +1232,20 @@ body.mobile {
 		</div>
 	  </b:if>
 	</b:includable>
-			  <b:includable id='description'>
+  <b:includable id='description'>
 	  <div class='descriptionwrapper'>
 		<p class='description'><span><data:description/></span></p>
 	  </div>
 	</b:includable>
-		<b:includable id='title'>
+  <b:includable id='title'>
 		  <b:if cond='data:blog.url == data:blog.homepageUrl'>
 			<data:title/>
 		  <b:else/>
 			<a expr:href='data:blog.homepageUrl'><data:title/></a>
 		  </b:if>
 		</b:includable>
-		</b:widget>
-		</b:section>
+</b:widget>
+</b:section>
 		</div>
 		</div>
 		<div class='header-cap-bottom cap-bottom'>
@@ -1256,11 +1256,11 @@ body.mobile {
 		  <div class='container-fluid'>
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class='navbar-header'>
-			  <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1'>
+			  <button class='navbar-toggle collapsed' data-target='#bs-example-navbar-collapse-1' data-toggle='collapse' type='button'>
 				<span class='sr-only'>Toggle navigation</span>
-				<span class='icon-bar'></span>
-				<span class='icon-bar'></span>
-				<span class='icon-bar'></span>
+				<span class='icon-bar'/>
+				<span class='icon-bar'/>
+				<span class='icon-bar'/>
 			  </button>
 			  <a class='navbar-brand active' expr:href='data:blog.homepageUrl'>Home</a>
 			</div>
@@ -1273,35 +1273,35 @@ body.mobile {
 				<li><a href='http://dumbass-developer.blogspot.com/search/label/HTML%2FCSS'>HTML/CSS</a></li>
 				<li><a href='http://dumbass-developer.blogspot.com/search/label/os'>Operating Systems</a></li>
 				<li class='dropdown'>
-				  <a href='http://dumbass-developer.blogspot.com/search/label/js' class='dropdown-toggle' data-toggle='dropdown'>JavaScript<span class='caret'></span></a>
+				  <a class='dropdown-toggle' data-toggle='dropdown' href='http://dumbass-developer.blogspot.com/search/label/js'>JavaScript<span class='caret'/></a>
 				  <ul class='dropdown-menu' role='menu'>
 					<li><a href='http://dumbass-developer.blogspot.com/search/label/nodejs'>Nodejs</a></li>
 					<li><a href='#'>AngularJS</a></li>
 					<li><a href=''>Jquery</a></li>
-					<li class='divider'></li>
+					<li class='divider'/>
 					<li><a href='http://dumbass-developer.blogspot.com/search/label/sencha%20touch'>Sencha Touch</a></li>
-					<li class='divider'></li>
+					<li class='divider'/>
 					<li><a href='#'>One more separated link</a></li>
 				  </ul>
 				</li>
 				<li class='dropdown'>
-				  <a href='#' class='dropdown-toggle' data-toggle='dropdown'>Other<span class='caret'></span></a>
+				  <a class='dropdown-toggle' data-toggle='dropdown' href='#'>Other<span class='caret'/></a>
 				  <ul class='dropdown-menu' role='menu'>
 					<li><a href='#'>Nodejs</a></li>
 					<li><a href='#'>AngularJS</a></li>
 					<li><a href='#'>Jquery</a></li>
-					<li class='divider'></li>
+					<li class='divider'/>
 					<li><a href='#'>Separated link</a></li>
-					<li class='divider'></li>
+					<li class='divider'/>
 					<li><a href='#'>One more separated link</a></li>
 				  </ul>
 				</li>
 			  </ul>
-			  <form class='navbar-form navbar-right' role='search' accept-charset='utf-8' expr:action='data:blog.homepageUrl + &quot;search/&quot;' id='search' method='GET'>
+			  <form accept-charset='utf-8' class='navbar-form navbar-right' expr:action='data:blog.homepageUrl + &quot;search/&quot;' id='search' method='GET' role='search'>
 				<div class='form-group'>
-				  <input type='text' class='form-control' placeholder='Search'  name='q' size='24' value='' />
+				  <input class='form-control' name='q' placeholder='Search' size='24' type='text' value=''/>
 				</div>
-				<button type='submit' class='submit btn btn-default'>Go</button>
+				<button class='submit btn btn-default' type='submit'>Go</button>
 			  </form>
 			</div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
