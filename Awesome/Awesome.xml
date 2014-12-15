@@ -1074,7 +1074,7 @@ body.mobile {
 
   <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
   <b:section class='navbar' id='navbar' maxwidgets='1' showaddelement='no'>
-    <b:widget id='Navbar1' locked='true' title='Thanh điều hướng' type='Navbar'>
+    <b:widget id='Navbar1' locked='true' title='Navbar' type='Navbar'>
       <b:includable id='main'>&lt;script type=&quot;text/javascript&quot;&gt;
     function setAttributeOnload(object, attribute, val) {
       if(window.addEventListener) {
@@ -1091,7 +1091,7 @@ body.mobile {
         gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
           if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
             gapi.iframes.getContext().openChild({
-                url: &#39;https://draft.blogger.com/navbar.g?targetBlogID\0755092287799829820642\46blogName\75Dumbass+developer\47s+life\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75LIGHT\46layoutType\75LAYOUTS\46searchRoot\75http://dumbass-developer.blogspot.com/search\46blogLocale\75vi\46v\0752\46homepageUrl\75http://dumbass-developer.blogspot.com/\46blogFollowUrl\75https://plus.google.com/110197759016744577492\46vt\75-6529608443868674474&#39;,
+                url: &#39;https://draft.blogger.com/navbar.g?targetBlogID\0755092287799829820642\46blogName\75Dumbass+developer\47s+life\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75LIGHT\46layoutType\75LAYOUTS\46searchRoot\75http://dumbass-developer.blogspot.com/search\46blogLocale\75en\46v\0752\46homepageUrl\75http://dumbass-developer.blogspot.com/\46blogFollowUrl\75https://plus.google.com/110197759016744577492\46vt\75-6529608443868674474&#39;,
                 where: document.getElementById(&quot;navbar-iframe-container&quot;),
                 id: &quot;navbar-iframe&quot;
             });
@@ -1176,7 +1176,7 @@ head.appendChild(script);
 		<div class='fauxborder-right header-fauxborder-right'/>
 		<div class='region-inner header-inner'>
 		  <b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
-<b:widget id='Header1' locked='true' title='Dumbass developer&apos;s life (Tiêu đề)' type='Header'>
+<b:widget id='Header1' locked='true' title='Dumbass developer&apos;s life (Header)' type='Header'>
   <b:includable id='main'>
 
 	  <b:if cond='data:useImage'>
@@ -1271,7 +1271,7 @@ head.appendChild(script);
 				<li><a href='http://dumbass-developer.blogspot.com/search/label/SQL'>SQL</a></li>
 				<li><a href='http://dumbass-developer.blogspot.com/search/label/NOSQL'>NoSQL</a></li>
 				<li><a href='http://dumbass-developer.blogspot.com/search/label/HTML%2FCSS'>HTML/CSS</a></li>
-				<li><a href='http://dumbass-developer.blogspot.com/search/label/os'>Operating Systems</a></li>
+				<li><a href='http://dumbass-developer.blogspot.com/search/label/os'>OS</a></li>
 				<li class='dropdown'>
 				  <a class='dropdown-toggle' data-toggle='dropdown' href='http://dumbass-developer.blogspot.com/search/label/js'>JavaScript<span class='caret'/></a>
 				  <ul class='dropdown-menu' role='menu'>
@@ -1393,7 +1393,7 @@ head.appendChild(script);
         <div class='column-center-outer'>
         <div class='column-center-inner'>
           <b:section class='main' id='main' showaddelement='no'>
-            <b:widget id='Blog1' locked='true' title='Bài đăng trên Blog' type='Blog'>
+            <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'>
               <b:includable id='main' var='top'>
   <b:if cond='data:mobile == &quot;false&quot;'>
 
@@ -2706,6 +2706,16 @@ head.appendChild(script);
           </b:if>
         </span>
       </b:loop>
+    </b:if>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+  </b:widget>
+  <b:widget id='AdSense1' locked='false' title='' type='AdSense'>
+    <b:includable id='main'>
+  <div class='widget-content'>
+    <b:if cond='data:blog.disableAdSenseWidget != &quot;true&quot;'>
+      <data:adCode/>
     </b:if>
     <b:include name='quickedit'/>
   </div>
