@@ -19,9 +19,16 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'/>
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'/>
 <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'/>
-<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'/>
-
-
+<link href='http://alexgorbatchev.com/pub/sh/current/styles/shCore.css' rel='stylesheet' type='text/css'/>
+<link href='http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css' rel='stylesheet' type='text/css'/>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js' type='text/javascript'/>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js' type='text/javascript'/>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js' type='text/javascript'/>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js' type='text/javascript'/>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPhp.js' type='text/javascript'/>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushSql.js' type='text/javascript'/>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js' type='text/javascript'/>
+<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushBash.js' type='text/javascript'/>
 <b:if cond='data:blog.url == data:blog.homepageUrl'>
 
 <meta content='responsive blogger templates,free blogger templates,templates for blogger free,blogger xml,premium blog themes' name='keywords'/>
@@ -361,8 +368,16 @@ blockquote.pull-right small:before{content:''}
 blockquote.pull-right small:after{content:'\00A0 \2014'}
 q:before,q:after,blockquote:before,blockquote:after{content:""}
 address{display:block;margin-bottom:20px;font-style:normal;line-height:20px}
-code,pre{padding:0 3px 2px;font-family:Monaco,Menlo,Consolas,"Courier New",monospace;font-size:12px;color:#333;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
-code{padding:2px 4px;color:#d14;background-color:#f7f7f9;border:1px solid #e1e1e8;white-space:nowrap}
+pre{
+	padding:0 3px 2px;
+	font-family:Monaco,Menlo,Consolas,"Courier New",monospace;
+	font-size:12px;
+	color:#333;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px
+}
+
 pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:20px;word-break:break-all;word-wrap:break-word;white-space:pre;white-space:pre-wrap;background-color:#f5f5f5;border:1px solid #ccc;border:1px solid rgba(0,0,0,0.15);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
 pre.prettyprint{margin-bottom:20px}
 pre code{padding:0;color:inherit;white-space:pre;white-space:pre-wrap;background-color:transparent;border:0}
@@ -764,7 +779,12 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini{*padding-top:1px;*padding-
 .navbar-fixed-bottom .nav>li>.dropdown-menu:before{border-top:7px solid #ccc;border-top-color:rgba(0,0,0,0.2);border-bottom:0;bottom:-7px;top:auto}
 .navbar-fixed-bottom .nav>li>.dropdown-menu:after{border-top:6px solid #fff;border-bottom:0;bottom:-6px;top:auto}
 .navbar .nav li.dropdown>a:hover .caret,.navbar .nav li.dropdown>a:focus .caret{border-top-color:#333;border-bottom-color:#333}
-.navbar .nav li.dropdown.open>.dropdown-toggle,.navbar .nav li.dropdown.active>.dropdown-toggle,.navbar .nav li.dropdown.open.active>.dropdown-toggle{background-color:#e5e5e5;color:#555}
+
+.navbar .nav li.dropdown.open>.dropdown-toggle,.navbar .nav li.dropdown.active>.dropdown-toggle,
+.navbar .nav li.dropdown.open.active>.dropdown-toggle{
+	background-color:#e5e5e5;
+	color:#555
+}
 .navbar .nav li.dropdown>.dropdown-toggle .caret{border-top-color:#777;border-bottom-color:#777}
 
 .navbar .nav li.dropdown.open>.dropdown-toggle .caret,.navbar .nav li.dropdown.active>.dropdown-toggle .caret,.navbar .nav li.dropdown.open.active>.dropdown-toggle .caret{border-top-color:#555;border-bottom-color:#555}
@@ -1275,14 +1295,20 @@ transition: all 0.1s ease-in-out;}
 	border-top: 3px solid rgba(0, 0, 0, 0);
 	transition:.3s;
 }
-.navbar .nav > li.active,.navbar .nav > li:hover{background:none repeat scroll 0 0 rgba(255,255,255,0.02);color:#fbcd12}
+.navbar .nav > li.active,.navbar .nav > li:hover{
+	background: none repeat scroll 0 0 rgba(255,255,255,0.02);
+    color: #fbcd12;
+}
+
 .dropdown-menu{background:none repeat scroll 0 0 #fff;border-top:2px solid #ddbe85;border-left:0;border-right:0;border-radius:0;padding:0;margin:0}
 .dropdown-menu > li > a{font-size: 13px;
 padding: 15px 20px;
 text-transform: uppercase;
 font-weight: 600;}
 .navbar .nav > li > .dropdown-menu:after,.navbar .nav > li > .dropdown-menu:before{display:none;}
-.navbar .nav > li:hover > ul{display:block;}
+.navbar .nav > li:hover > ul{
+	display:block;
+}
 .dropdown-menu > li > a:hover{background:#ddbe85;  color: #fff !important;
 }
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle,.navbar-inverse .nav li.dropdown.active > .dropdown-toggle,.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle{background:none repeat scroll 0 0 #212833}
@@ -1778,31 +1804,30 @@ text-transform: uppercase;
 }
 
 .page-header1 h2.page-title {
-  margin-top: 20px;
+    margin-top: 20px;
     margin-bottom: 5px;
     letter-spacing: 1px;
     font-size: 34px;
     line-height: 30px;
     font-weight: 400;
-    font-family: 'playball';
+    font-family: serif;
 
 }
 
 .page-title {
-
-color: #111;
+	color: #111;
 }
 
 
 .entry-meta {
-color: #AEAEAE;
-font-size: 11px;
-text-transform: uppercase;
-display: block;
-padding: 0;
-margin: 0 0 10px!important;
-list-style: none;
-letter-spacing: 1px;
+	color: #AEAEAE;
+	font-size: 11px;
+	text-transform: uppercase;
+	display: block;
+	padding: 0;
+	margin: 0 0 10px!important;
+	list-style: none;
+	letter-spacing: 1px;
 }
 
 .entry-meta li {
@@ -2468,7 +2493,7 @@ margin-top: 10px;
 
 
 h1.innner {
-    font-family: &#39;playball&#39;;
+    font-family: &#39;serif&#39;;
 }
 .meta1 {
     font-family: &#39;Montserrat&#39;, sans-serif;
@@ -4666,14 +4691,14 @@ div.className = "sidethumb"
 <li><a class='act' href='http://ducnguyendev.blogspot.com/search/label/JAVA'>Java</a></li>
 <li><a href='http://ducnguyendev.blogspot.com/search/label/PHP'>PHP</a></li>
 <li><a href='http://ducnguyendev.blogspot.com/search/label/javascript'>JavaScript</a></li>
-<li><a href='http://ducnguyendev.blogspot.com/search/label/HTML%2FCSS'>HTML&#38;CSS</a></li>
+<li><a href='http://ducnguyendev.blogspot.com/search/label/HTML%2FCSS'>HTML&amp;CSS</a></li>
 <li class='dropdown'>
-    <a class='dropdown-toggle' data-toggle='dropdown' href='http://ducnguyendev.blogspot.com/search/label/hibernate'>Database
-        <i class='icon-angle-down'/>
-    </a>
+    <a class='dropdown-toggle' data-toggle='dropdown' href='http://ducnguyendev.blogspot.com/search/label/hibernate'>Database<i class='icon-angle-down'/></a>
     <ul class='dropdown-menu'>
         <li><a href='http://ducnguyendev.blogspot.com/search/label/MYSQL'>MySql</a></li>
         <li><a href='http://ducnguyendev.blogspot.com/search/label/DB2'>DB2</a></li>
+        <li><a href='http://ducnguyendev.blogspot.com/search/label/sql'>SQL</a></li>
+        <li><a href='http://ducnguyendev.blogspot.com/search/label/hibernate'>Hibernate</a></li>
     </ul>
 </li>
 <li><a href='http://ducnguyendev.blogspot.com/search/label/os'>OS</a></li>
@@ -5331,17 +5356,17 @@ div.className = "sidethumb"
 								<div class='post-author'>					
 													
 									<div class='author-img'>
-										<img alt='' class='avatar avatar-110 photo' height='110' src='http://1.bp.blogspot.com/-8GNXLlTXotQ/VdnfxADsZEI/AAAAAAAADAo/FFKL7CQ2MjA/s1600/avata-about.png' width='110'/>
+										<img alt='' class='avatar avatar-110 photo' height='110' src='https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/200px-Chelsea_FC.svg.png' width='110'/>
 									</div>
 									<div class='author-text'>
-										<h4><a href='' rel='author' title=''>Zarja Kij</a></h4>
-										<p>Lorem ipsum dolor sit amet, cotur acing elit. Ut euis eget dolor sit amet congue. Ut vira codo matis. Sed lacia luctus magna ut sodales lorem.</p>
+										<h4><a href='' rel='author' title=''>Duc Nguyen</a></h4>
+										<p>I am a Java Developer</p>
 										<span class='author-share'>
-											<a href='#'><i class='fa fa-facebook round-icon'/></a>		
-											<a href='#'><i class='fa fa-twitter round-icon'/></a>					
-											<a href='#'><i class='fa fa-instagram round-icon'/></a>		
-											<a href='#'><i class='fa fa-google-plus round-icon'/></a>		
-											<a href='#'><i class='fa fa-pinterest round-icon'/></a>							<a href='http://#.tumblr.com/'><i class='fa fa-tumblr round-icon'/></a>		
+											<a href='https://github.com/vanduc1102'><i class='fa fa-github round-icon'/></a>
+											<a href='https://www.facebook.com/vanduc1102'><i class='fa fa-facebook round-icon'/></a>		
+											<a href='https://twitter.com/vanducld'><i class='fa fa-twitter round-icon'/></a>					
+											<a href='https://www.instagram.com/vanduc1102/'><i class='fa fa-instagram round-icon'/></a>		
+											<a href='https://plus.google.com/u/0/+ducnguyen123'><i class='fa fa-google-plus round-icon'/></a>	
 										</span>
 									</div>
 								</div>
@@ -5696,19 +5721,6 @@ div.className = "sidethumb"
   <b:include name='quickedit'/>
 </b:includable>
   </b:widget>
-  <b:widget id='HTML2' locked='false' title='Follow Me' type='HTML' visible='true'>
-    <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-
-  <b:include name='quickedit'/>
-</b:includable>
-  </b:widget>
   <b:widget id='PopularPosts1' locked='false' title='Popular Posts' type='PopularPosts' version='1' visible='true'>
     <b:includable id='main'>
 <b:if cond='data:title'><h2><data:title/></h2></b:if>
@@ -5953,6 +5965,13 @@ head.appendChild(script);
 &lt;/script&gt;
 </b:includable>
   </b:widget>
+  <b:widget id='HTML5' locked='false' title='SLIDE1' type='HTML' version='1' visible='true'>
+    <b:includable id='main'>					
+						<script>
+							document.write(&quot;&lt;script src=\&quot;/feeds/posts/default/-/<data:content/>?max-results=5&amp;orderby=published&amp;alt=json-in-script&amp;callback=showrecentposts1\&quot;&gt;&lt;\/script&gt;&quot;);
+						</script>					
+					</b:includable>
+  </b:widget>
 </b:section>
 </div>
 
@@ -6092,7 +6111,28 @@ head.appendChild(script);
 <section class='footer-social-bar'>
 	<div class='container3'><div class='row'>
 	<ul class='footer-social-items'>
-	<li><a class='facebook' href='#'><i class='fa fa-facebook'/><div><strong>Facebook</strong></div></a></li><li><a class='twitter' href='#'><i class='fa fa-twitter'/><div><strong>Twitter</strong></div></a></li><li><a class='youtube' href='#'><i class='fa fa-youtube'/><div><strong>Youtube</strong></div></a></li><li><a class='google' href='#'><i class='fa fa-google-plus'/><div><strong>Google Plus</strong></div></a></li><li><a class='linkedin' href='#'><i class='fa fa-linkedin'/><div><strong>Linkedin</strong></div></a></li><li><a class='rss' href='#'><i class='fa fa-pinterest'/><div><strong>Pinterest</strong></div></a></li>	</ul>
+		<li>
+			<a class='rss' href='https://github.com/vanduc1102'><i class='fa fa-github'/><div><strong>Github</strong></div></a>
+		</li>
+		<li>
+			<a class='linkedin' href='https://www.linkedin.com/in/vanduc1102'><i class='fa fa-linkedin'/><div><strong>Linkedin</strong></div></a>
+		</li>
+		<li>
+			<a class='facebook' href='https://www.facebook.com/vanduc1102'><i class='fa fa-facebook'/><div><strong>Facebook</strong></div>
+			</a>
+		</li>
+		<li>
+			<a class='twitter' href='https://twitter.com/vanducld'><i class='fa fa-twitter'/><div><strong>Twitter</strong></div></a>
+		</li>
+		<li>
+			<a class='youtube' href='https://www.youtube.com/channel/UCWt5gKLAGIAUiMAqyFXDF-Q'><i class='fa fa-youtube'/><div><strong>Youtube</strong></div></a>
+		</li>
+		<li>
+			<a class='google' href='https://plus.google.com/u/0/+ducnguyen123'><i class='fa fa-google-plus'/><div><strong>Google Plus</strong></div></a>
+		</li>
+		
+
+	</ul>
 	</div></div>
 
 
@@ -7150,5 +7190,6 @@ var bs_pinSuffix = "";
     $(&quot;#masthead&quot;).sticky({topSpacing:0});
   });
 </script>
+<script type='text/javascript'>SyntaxHighlighter.all();</script>
 </body>
 </html>
