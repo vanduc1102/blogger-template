@@ -16,25 +16,25 @@ URL:      tinachen.org
 
 /* Variable definitions
    ====================
-   <Variable name="keycolor" description="Main Color" type="color" default="#ffffff" value="#ffffff"/>
+   <Variable name="keycolor" description="Main Color" type="color" default="#ffffff" value="#eeeeee"/>
 
    <Group description="Page" selector="body">
      <Variable name="body.font" description="Font" type="font"
          default="normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
-     <Variable name="body.background.color" description="Background Color" type="color" default="#000000" value="#000000"/>
-     <Variable name="body.text.color" description="Text Color" type="color" default="#ffffff" value="#ffffff"/>
+     <Variable name="body.background.color" description="Background Color" type="color" default="#000000" value="#eeeeee"/>
+     <Variable name="body.text.color" description="Text Color" type="color" default="#ffffff" value="#444444"/>
    </Group>
 
    <Group description="Links" selector=".main-inner">
-     <Variable name="link.color" description="Link Color" type="color" default="#888888" value="#888888"/>
-     <Variable name="link.visited.color" description="Visited Color" type="color" default="#444444" value="#444444"/>
-     <Variable name="link.hover.color" description="Hover Color" type="color" default="#cccccc" value="#cccccc"/>
+     <Variable name="link.color" description="Link Color" type="color" default="#888888" value="#3778cd"/>
+     <Variable name="link.visited.color" description="Visited Color" type="color" default="#444444" value="#4d469c"/>
+     <Variable name="link.hover.color" description="Hover Color" type="color" default="#cccccc" value="#3778cd"/>
    </Group>
 
    <Group description="Blog Title" selector=".header h1">
      <Variable name="header.font" description="Title Font" type="font"
          default="normal bold 40px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal bold 40px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
-     <Variable name="header.text.color" description="Title Color" type="color" default="$(body.text.color)"  value="#ffffff"/>
+     <Variable name="header.text.color" description="Title Color" type="color" default="$(body.text.color)"  value="#444444"/>
      <Variable name="header.background.color" description="Header Background" type="color" default="transparent"  value="transparent"/>
    </Group>
 
@@ -42,64 +42,64 @@ URL:      tinachen.org
      <Variable name="description.font" description="Font" type="font"
          default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
      <Variable name="description.text.color" description="Text Color" type="color"
-         default="$(body.text.color)"  value="#ffffff"/>
+         default="$(body.text.color)"  value="#444444"/>
    </Group>
 
    <Group description="Tabs Text" selector=".tabs-inner .widget li a">
      <Variable name="tabs.font" description="Font" type="font"
          default="normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
-     <Variable name="tabs.text.color" description="Text Color" type="color" default="$(body.text.color)" value="#ffffff"/>
+     <Variable name="tabs.text.color" description="Text Color" type="color" default="$(body.text.color)" value="#444444"/>
      <Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="$(tabs.text.color)" value="#ffffff"/>
    </Group>
 
    <Group description="Tabs Background" selector=".tabs-outer .PageList">
-     <Variable name="tabs.background.color" description="Background Color" type="color" default="#141414" value="#141414"/>
-     <Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="#444444" value="#444444"/>
-     <Variable name="tabs.border.color" description="Border Color" type="color" default="$(widget.border.color)" value="#222222"/>
+     <Variable name="tabs.background.color" description="Background Color" type="color" default="#141414" value="#eeeeee"/>
+     <Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="#444444" value="#666666"/>
+     <Variable name="tabs.border.color" description="Border Color" type="color" default="$(widget.border.color)" value="#999999"/>
    </Group>
 
    <Group description="Date Header" selector=".main-inner .widget h2.date-header, .main-inner .widget h2.date-header span">
      <Variable name="date.font" description="Font" type="font"
          default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
-     <Variable name="date.text.color" description="Text Color" type="color" default="#666666" value="#666666"/>
-     <Variable name="date.border.color" description="Border Color" type="color" default="$(widget.border.color)" value="#222222"/>
+     <Variable name="date.text.color" description="Text Color" type="color" default="#666666" value="#444444"/>
+     <Variable name="date.border.color" description="Border Color" type="color" default="$(widget.border.color)" value="#eeeeee"/>
    </Group>
 
    <Group description="Post Title" selector="h3.post-title, h4, h3.post-title a">
      <Variable name="post.title.font" description="Font" type="font"
          default="normal bold 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal bold 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
-     <Variable name="post.title.text.color" description="Text Color" type="color" default="$(body.text.color)" value="#ffffff"/>
+     <Variable name="post.title.text.color" description="Text Color" type="color" default="$(body.text.color)" value="#444444"/>
    </Group>
 
    <Group description="Post Background" selector=".post">
-     <Variable name="post.background.color" description="Background Color" type="color" default="$(widget.background.color)"  value="#141414"/>
-     <Variable name="post.border.color" description="Border Color" type="color" default="$(widget.border.color)"  value="#222222"/>
-     <Variable name="post.border.bevel.color" description="Bevel Color" type="color" default="$(widget.border.color)" value="#222222"/>
+     <Variable name="post.background.color" description="Background Color" type="color" default="$(widget.background.color)"  value="#ffffff"/>
+     <Variable name="post.border.color" description="Border Color" type="color" default="$(widget.border.color)"  value="#eeeeee"/>
+     <Variable name="post.border.bevel.color" description="Bevel Color" type="color" default="$(widget.border.color)" value="#eeeeee"/>
    </Group>
 
    <Group description="Gadget Title" selector="h2">
      <Variable name="widget.title.font" description="Font" type="font"
         default="normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
-     <Variable name="widget.title.text.color" description="Text Color" type="color" default="$(body.text.color)" value="#ffffff"/>
+     <Variable name="widget.title.text.color" description="Text Color" type="color" default="$(body.text.color)" value="#444444"/>
    </Group>
 
    <Group description="Gadget Text" selector=".sidebar .widget">
      <Variable name="widget.font" description="Font" type="font"
         default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
-     <Variable name="widget.text.color" description="Text Color" type="color" default="$(body.text.color)" value="#ffffff"/>
+     <Variable name="widget.text.color" description="Text Color" type="color" default="$(body.text.color)" value="#444444"/>
      <Variable name="widget.alternate.text.color" description="Alternate Color" type="color" default="#666666" value="#666666"/>
    </Group>
 
    <Group description="Gadget Links" selector=".sidebar .widget">
-     <Variable name="widget.link.color" description="Link Color" type="color" default="$(link.color)" value="#888888"/>
-     <Variable name="widget.link.visited.color" description="Visited Color" type="color" default="$(link.visited.color)" value="#444444"/>
-     <Variable name="widget.link.hover.color" description="Hover Color" type="color" default="$(link.hover.color)" value="#cccccc"/>
+     <Variable name="widget.link.color" description="Link Color" type="color" default="$(link.color)" value="#3778cd"/>
+     <Variable name="widget.link.visited.color" description="Visited Color" type="color" default="$(link.visited.color)" value="#4d469c"/>
+     <Variable name="widget.link.hover.color" description="Hover Color" type="color" default="$(link.hover.color)" value="#3778cd"/>
    </Group>
 
    <Group description="Gadget Background" selector=".sidebar .widget">
-     <Variable name="widget.background.color" description="Background Color" type="color" default="#141414" value="#141414"/>
-     <Variable name="widget.border.color" description="Border Color" type="color" default="#222222" value="#222222"/>
-     <Variable name="widget.border.bevel.color" description="Bevel Color" type="color" default="#000000" value="#000000"/>
+     <Variable name="widget.background.color" description="Background Color" type="color" default="#141414" value="#ffffff"/>
+     <Variable name="widget.border.color" description="Border Color" type="color" default="#222222" value="#eeeeee"/>
+     <Variable name="widget.border.bevel.color" description="Bevel Color" type="color" default="#000000" value="transparent"/>
    </Group>
 
    <Group description="Sidebar Background" selector=".column-left-inner .column-right-inner">
@@ -112,22 +112,22 @@ URL:      tinachen.org
    </Group>
 
    <Group description="Feed" selector=".blog-feeds">
-      <Variable name="feed.text.color" description="Text Color" type="color" default="$(body.text.color)" value="#ffffff"/>
+      <Variable name="feed.text.color" description="Text Color" type="color" default="$(body.text.color)" value="#444444"/>
    </Group>
 
    <Group description="Feed Links" selector=".blog-feeds">
-     <Variable name="feed.link.color" description="Link Color" type="color" default="$(link.color)" value="#888888"/>
-     <Variable name="feed.link.visited.color" description="Visited Color" type="color" default="$(link.visited.color)" value="#444444"/>
-     <Variable name="feed.link.hover.color" description="Hover Color" type="color" default="$(link.hover.color)" value="#cccccc"/>
+     <Variable name="feed.link.color" description="Link Color" type="color" default="$(link.color)" value="#3778cd"/>
+     <Variable name="feed.link.visited.color" description="Visited Color" type="color" default="$(link.visited.color)" value="#4d469c"/>
+     <Variable name="feed.link.hover.color" description="Hover Color" type="color" default="$(link.hover.color)" value="#3778cd"/>
    </Group>
 
    <Group description="Pager" selector=".blog-pager">
-     <Variable name="pager.background.color" description="Background Color" type="color" default="$(post.background.color)"  value="#141414"/>
+     <Variable name="pager.background.color" description="Background Color" type="color" default="$(post.background.color)"  value="#ffffff"/>
    </Group>
 
    <Group description="Footer" selector=".footer-outer">
-     <Variable name="footer.background.color" description="Background Color" type="color" default="$(widget.background.color)"  value="#141414"/>
-     <Variable name="footer.text.color" description="Text Color" type="color" default="$(body.text.color)"  value="#ffffff"/>
+     <Variable name="footer.background.color" description="Background Color" type="color" default="$(widget.background.color)"  value="#ffffff"/>
+     <Variable name="footer.text.color" description="Text Color" type="color" default="$(body.text.color)"  value="#444444"/>
    </Group>
 
    <Variable name="title.shadow.spread" description="Title Shadow" type="length" default="-1px" min="-1px" max="100px" value="-1px"/>
@@ -140,7 +140,7 @@ URL:      tinachen.org
    <Variable name="body.background.size" description="Body Background Size" type="string" default="auto" value="auto"/>
 
    <Variable name="tabs.background.gradient" description="Tabs Background Gradient" type="url"
-       default="none" value="none"/>
+       default="none" value="url(https://resources.blogblog.com/blogblog/data/1kt/awesomeinc/tabs_gradient_light.png)"/>
 
    <Variable name="header.background.gradient" description="Header Background Gradient" type="url" default="none"  value="none"/>
    <Variable name="header.padding.top" description="Header Top Padding" type="length" default="22px" min="0" max="100px" value="22px"/>
@@ -176,7 +176,7 @@ URL:      tinachen.org
    <Variable name="separator.outdent" description="Separator Outdent" type="length" default="15px" min="0" max="100px" value="15px"/>
    <Variable name="title.separator.border.size" description="Widget Title Border Size" type="length" default="1px" min="0" max="10px" value="1px"/>
    <Variable name="list.separator.border.size" description="List Separator Border Size" type="length" default="1px" min="0" max="10px" value="1px"/>
-   <Variable name="shadow.spread" description="Shadow Size" type="length" default="0" min="0" max="100px" value="0"/>
+   <Variable name="shadow.spread" description="Shadow Size" type="length" default="0" min="0" max="100px" value="20px"/>
 
    <Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left" value="left"/>
    <Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right" value="right"/>
@@ -415,6 +415,12 @@ h2 {
   text-shadow: 0 0 $(title.shadow.spread) #000000;
 }
 
+.sidebar .widget .widget-content.list-label-widget-content ul li{
+	text-transform: uppercase;
+}
+.widget-content.popular-posts .item-content .item-title{
+	text-transform: uppercase;
+}
 .main-inner .widget {
   background-color: $(widget.background.color);
   border: 1px solid $(widget.border.color);
@@ -492,6 +498,10 @@ h2 {
   position: relative;
 }
 
+h3.post-title.entry-title{
+	text-transform: uppercase;
+}
+
 .main-inner .widget .post-body ul {
   padding: 0 2.5em;
   margin: .5em 0;
@@ -502,9 +512,7 @@ h2 {
 .main-inner .widget .post-body ul li {
   padding: 0.25em 0;
   margin-bottom: .25em;
-
   color: $(body.text.color);
-
   border: none;
 }
 
@@ -531,6 +539,9 @@ body .main-inner .Blog {
   -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   -goog-ms-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+div.status-msg-wrap{
+	display : none !important;
 }
 
 .main-inner .section:last-child .Blog:last-child {
@@ -569,6 +580,10 @@ body .main-inner .Blog {
   padding: .5em 15px;
   border-left: $(date.border.size) solid $(date.border.color);
   border-right: $(date.border.size) solid $(date.border.color);
+}
+
+.blog-posts .date-outer {
+	margin-top: 0;
 }
 
 .date-outer {
@@ -637,8 +652,15 @@ body .main-inner .Blog {
 .post-body {
   position: relative;
 }
+.post-body pre{
+	overflow-x: auto;
+}
 
 .post-body img {
+	max-width: 100%;
+	max-height: auto;
+	display: block;
+	margin: auto; 
   padding: 8px;
   background: $(image.background.color);
   border: 1px solid $(image.border.color);
@@ -1002,6 +1024,17 @@ body.mobile {
     </b:if>
 
     <b:include data='blog' name='google-analytics'/>
+	<link href='http://alexgorbatchev.com/pub/sh/current/styles/shCore.css' rel='stylesheet' type='text/css'/>
+	<link href='http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css' rel='stylesheet' type='text/css'/>
+	<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js' type='text/javascript'/>
+	<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js' type='text/javascript'/>
+	<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js' type='text/javascript'/>
+	<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js' type='text/javascript'/>
+	<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushPhp.js' type='text/javascript'/>
+	<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushSql.js' type='text/javascript'/>
+	<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushXml.js' type='text/javascript'/>
+	<script src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushBash.js' type='text/javascript'/>
+  
   </head>
 
   <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
@@ -1270,8 +1303,8 @@ head.appendChild(script);
 
         <div class='column-center-outer'>
         <div class='column-center-inner'>
-          <b:section class='main' id='main' name='Main' showaddelement='no'> 
-            <b:widget id='Blog1' locked='false' title='Blog Posts' type='Blog' visible='true'>
+          <b:section class='main' id='main' name='Main' showaddelement='no'>
+            <b:widget id='Blog2' locked='false' title='Blog Posts' type='Blog' visible='true'>
               <b:includable id='main' var='top'>
   <b:if cond='!data:mobile'>
     <!-- posts -->
@@ -2166,8 +2199,7 @@ head.appendChild(script);
 </b:includable>
             </b:widget>
           </b:section>
-        -->
-		</div>
+        </div>
         </div>
 
         <div class='column-left-outer'>
@@ -2355,17 +2387,12 @@ head.appendChild(script);
     </div>
   </b:includable>
   </b:widget>
-  <b:widget id='HTML1' locked='false' title='Search' type='HTML' visible='true'>
+  <b:widget id='AdSense1' locked='false' title='' type='AdSense' visible='true'>
     <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
   <div class='widget-content'>
-    <data:content/>
+    <data:adCode/>
+    <b:include name='quickedit'/>
   </div>
-
-  <b:include name='quickedit'/>
 </b:includable>
   </b:widget>
   <b:widget id='PopularPosts1' locked='false' title='Popular Posts' type='PopularPosts' visible='true'>
@@ -2406,14 +2433,6 @@ head.appendChild(script);
       </li>
       </b:loop>
     </ul>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-  </b:widget>
-  <b:widget id='AdSense1' locked='false' title='' type='AdSense' visible='true'>
-    <b:includable id='main'>
-  <div class='widget-content'>
-    <data:adCode/>
     <b:include name='quickedit'/>
   </div>
 </b:includable>
@@ -2526,25 +2545,11 @@ head.appendChild(script);
   </a>
 </b:includable>
   </b:widget>
-  <b:widget id='Image1' locked='false' title='Ad Banner' type='Image' visible='true'>
-    <b:includable id='main'>
-    <b:if cond='data:title != &quot;&quot;'>
-      <h2><data:title/></h2>
-    </b:if>
-    <div class='widget-content'>
-      <b:if cond='data:link'>
-        <a expr:href='data:link'>
-          <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl' expr:width='data:width'/>
-        </a>
-      <b:else/>
-        <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl' expr:width='data:width'/>
-      </b:if>
-      <br/>
-      <b:if cond='data:caption'>
-        <span class='caption'><data:caption/></span>
-      </b:if>
-    </div>
-    <b:include name='quickedit'/>
-  </b:includable>
-  </b:widget>
-</b:section-contents><b:section-contents id='sidebar-right-2-1'/><b:section-contents id='sidebar-right-2-2'/><b:section-contents id='sidebar-right-3'/><b:section-contents id='footer-1'/><b:section-contents id='footer-2-1'/><b:section-contents id='footer-2-2'/></html>
+</b:section-contents><b:section-contents id='sidebar-right-2-1'/>
+<b:section-contents id='sidebar-right-2-2'/>
+<b:section-contents id='sidebar-right-3'/>
+<b:section-contents id='footer-1'/>
+<b:section-contents id='footer-2-1'/>
+<b:section-contents id='footer-2-2'/>
+<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</html>
