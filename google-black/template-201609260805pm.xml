@@ -449,6 +449,27 @@ h2 {
   border-bottom: 1px solid $(widget.border.bevel.color);
 }
 
+@media only screen and (min-width: 768px) {
+	.columns-inner .column-center-outer{
+		width: calc(100% - 310px);
+	}
+	
+	.main-inner .columns{
+		padding-right: 0 !important;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.columns-inner .column-center-outer{
+		width: 100%;
+		display: block;
+	}
+	.columns-inner .column-right-outer{
+		width: 100%;
+		display: block;
+	}
+}
+
 .footer-inner .widget h2 {
   padding: 0 0 .4em;
 
@@ -587,9 +608,16 @@ div.status-msg-wrap{
   border-right: $(date.border.size) solid $(date.border.color);
 }
 
+.columns-inner{
+	display: inline-block;
+}
+
+
 .blog-posts .date-outer {
 	margin-top: 0;
 }
+
+
 
 .date-outer {
   position: relative;
