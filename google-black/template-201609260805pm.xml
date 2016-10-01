@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
   <head>
-    <meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
+    <meta expr:content='data:blog.isMobile ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot; : &quot;width=1100&quot;' name='viewport'/>
     <b:include data='blog' name='all-head-content'/>
     <!-- <title><data:blog.pageTitle/></title> -->
 	<b:if cond= 'data:blog.pageType == &quot;index&quot;'>
@@ -426,6 +426,9 @@ h2 {
 .widget-content.popular-posts .item-content .item-title{
 	text-transform: uppercase;
 }
+.PopularPosts .item-title{
+	text-transform: uppercase;
+}
 .main-inner .widget {
   background-color: $(widget.background.color);
   border: 1px solid $(widget.border.color);
@@ -449,30 +452,8 @@ h2 {
   border-bottom: 1px solid $(widget.border.bevel.color);
 }
 
-@media only screen and (min-width: 768px) {
-	.columns-inner .column-center-outer{
-		width: calc(100% - 310px);
-	}
-	
-	.main-inner .columns{
-		padding-right: 0 !important;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	.columns-inner .column-center-outer{
-		width: 100%;
-		display: block;
-	}
-	.columns-inner .column-right-outer{
-		width: 100%;
-		display: block;
-	}
-}
-
 .footer-inner .widget h2 {
   padding: 0 0 .4em;
-
   border-bottom: 1px solid $(widget.border.bevel.color);
 }
 
@@ -526,6 +507,7 @@ h2 {
 
 h3.post-title.entry-title{
 	text-transform: uppercase;
+	border-bottom: 1px solid #eeeeee;
 }
 
 .main-inner .widget .post-body ul {
@@ -608,16 +590,9 @@ div.status-msg-wrap{
   border-right: $(date.border.size) solid $(date.border.color);
 }
 
-.columns-inner{
-	display: inline-block;
-}
-
-
 .blog-posts .date-outer {
 	margin-top: 0;
 }
-
-
 
 .date-outer {
   position: relative;
@@ -854,6 +829,9 @@ body.mobile {
   padding: 0.5em 0;
   border-bottom: none;
 }
+.mobile .mobile-index-title.entry-title{
+	text-transform: uppercase;
+}
 
 .mobile .main-inner .widget .widget-content {
   margin: 0;
@@ -954,7 +932,12 @@ body.mobile {
 .mobile .main-inner .section:last-child .Blog:last-child {
   margin-bottom: 0;
 }
-
+.mobile .mobile-post-outer .mobile-index-title{
+	width: 100% !important;
+	background-color: #bbbbbb !important;
+	margin-left: -10px !important;
+	color: #444444;
+}
 .mobile-index-contents {
   color: $(body.text.color);
 }
@@ -1641,6 +1624,7 @@ head.appendChild(script);
         <div class='mobile-index-arrow'>&amp;rsaquo;</div>
 
         <div class='mobile-index-contents'>
+			<!-- 
           <b:if cond='data:post.thumbnailUrl'>
             <div class='mobile-index-thumbnail'>
               <div class='Image'>
@@ -1648,6 +1632,7 @@ head.appendChild(script);
               </div>
             </div>
           </b:if>
+		  -->
 
           <div class='post-body'>
             <b:if cond='data:post.snippet'><data:post.snippet/></b:if>
@@ -2455,10 +2440,13 @@ head.appendChild(script);
             <b:if cond='data:post.featuredImage.isResizable or data:post.thumbnail'>
               <div class='item-thumbnail'>
                 <a expr:href='data:post.href' target='_blank'>
+				
                   <b:with value='data:post.featuredImage.isResizable                                  ? resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;)                                  : data:post.thumbnail' var='image'>
                     <img alt='' border='0' expr:src='data:image'/>
                   </b:with>
+				 
                 </a>
+				
               </div>
             </b:if>
             <div class='item-title'><a expr:href='data:post.href'><data:post.title/></a></div>
@@ -2583,4 +2571,10 @@ head.appendChild(script);
   </a>
 </b:includable>
   </b:widget>
-</b:section-contents><b:section-contents id='sidebar-right-2-1'/><b:section-contents id='sidebar-right-2-2'/><b:section-contents id='sidebar-right-3'/><b:section-contents id='footer-1'/><b:section-contents id='footer-2-1'/><b:section-contents id='footer-2-2'/></html>
+</b:section-contents><b:section-contents id='sidebar-right-2-1'/>
+<b:section-contents id='sidebar-right-2-2'/>
+<b:section-contents id='sidebar-right-3'/>
+<b:section-contents id='footer-1'/>
+<b:section-contents id='footer-2-1'/>
+<b:section-contents id='footer-2-2'/>
+</html>
